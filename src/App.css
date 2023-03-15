@@ -1,0 +1,87 @@
+*{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+   
+}
+
+body{
+  overflow-x: hidden;
+  background: url('Img/caminho-no-meio-das-arvores-de-folhas-verdes-com-o-sol-brilhando-atraves-dos-galhos.jpg');
+}
+
+.bg_img{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+   
+}
+
+input{
+ background-color: rgb(255, 255, 255);
+ height: 30px;  
+ border:none;
+ border-radius: 10px;
+}
+
+.group{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 1rem 0;
+  
+}
+
+.city{
+  margin-top: 2rem;
+
+}
+
+.city, .temp{
+  font-size: 3rem;
+
+}
+
+
+.box_container{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: aliceblue;
+}
+
+.box{
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.438);
+  width: 220px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition:.2s;
+  transform: 0.2s;
+}
+
+.box:hover{
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width:730px){
+  .bg_img{
+    padding: 2rem 0;    
+  }
+  .box_container{
+    flex-direction: column;    
+  }
+
+  .box, .input{
+    width: 70vw;
+  }
+}
